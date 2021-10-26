@@ -7,7 +7,6 @@ RUN apt-get update \
  && echo "export PATH=/root/miniconda3/bin/:$PATH" >> /root/.bashrc \
  && conda install -y pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch \
  && conda install -y pandas \
- && conda install -y itertools \
  && conda install -y scikit-learn \
  && conda install -y matplotlib \
  && conda install -y -c conda-forge jupyterlab \
