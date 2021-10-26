@@ -9,7 +9,7 @@ RUN apt-get update \
  && conda install -y pandas \
  && conda install -y scikit-learn \
  && conda install -y matplotlib \
- && conda install -y -c conda-forge jupyterlab \
+ && conda install -y -c conda-forge jupyterlab 
 
-CMD ["jupyter", "notebook",'no-browser','ip=0.0.0.0','allow-root','NotebookApp.token=','notebook-dir="/nfs/"']
+CMD ["jupyter", "notebook","no-browser","ip=0.0.0.0","allow-root","NotebookApp.token=","notebook-dir=/nfs/"]
 
